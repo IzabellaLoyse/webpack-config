@@ -49,8 +49,7 @@ yarn install
 
 Para rodar o projeto
 
-
--  Rodar o Projeto com Live Reloading
+- Rodar o Projeto com Live Reloading
 
 ```
 npm run start
@@ -68,5 +67,6 @@ npm run build
 
 ## 📄 Conteúdo de Estudo do Webpack
 
-Na página de ```info.md``` do projeto contém anotações sobre o que é o Webpack e as suas funcionalidades.
+Na página de `info.md` do projeto contém anotações sobre o que é o Webpack e as suas funcionalidades.
 
+Para mais informações sobre o Webpack acesse o [Info](https://github.com/IzabellaLoyse/webpack-config/blob/main/info.md)
