@@ -59,12 +59,25 @@ npx webpack
 - **Forma de carregar arquivos com o Webpack**
 - Como: SCSS, CSS, Babel
 
-### Plugins
+### 🪄 Plugins
 
+- **Plugins** são funcionalidades que podem ser adicionadas ao nosso projeto
+- Como por exemplo: mimificar o JS para deixar o carregamento mais rápido
+- Precisamos instalar e inicializar cada um dos plugins, eles devem ser adicionados no arquivo `webpack.config.js`
 
+### 🛠️ Modes
 
-### Modes
+- **Mode** ou modo é a forma que o webpack vai rodar no projeto que está sendo executado
+- Podemos separar em **development**, **production** ou **none**
+- Criando configurações isoladas para da um deles
+- Definimos o modo do projeto em arquivos separados ou também no arquivo `webpack.config.js`
 
-### Development
+#### 💻 Development
 
-### Production
+- Modo de desenvolvimento é o ambiente de desenvolvimento do projeto
+- Criando o arquivo com a seguinte sintaxe `webpack.dev.js`
+
+#### ⏲️ Production
+
+- Modo de produção é um build otimizado do projeto contendo os arquivos mimificados
+- Criando o arquivo com a seguinte sintaxe `webpack.prod.js`
