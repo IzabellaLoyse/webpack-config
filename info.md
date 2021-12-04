@@ -2,15 +2,15 @@
 
 ### 📄 O que é o Webpack ?
 
-- O Webpack é um module bundler (empacotador de módulos)
-- Que recebe entradas(entry/entries) que são os arquivos de dependências do projeto
-- E transforma em uma saída(output), que condensa as dependências
+- O Webpack é um **module bundler** (empacotador de módulos)
+- Que recebe **entradas(entry/entries)** que são os arquivos de dependências do projeto
+- E transforma em uma **saída(output)**, que condensa as dependências
 - Pode-se utilizar outros tipos de arquivos como: CSS, images, fonts e etc
 - É possível também criar configurações diferentes para ambientes de desenvolvimento e produção
 
 ### 📌 Por que utilizar o Webpack ?
 
-- Reduzir a complexidade de importação das dependências
+- **Reduzir a complexidade de importação das dependências**
 - A própria importação de dependências(CommonJS), pois os navegadores não possuem compatibilidade com este recurso
 - Coleta automática de dependências, baseada no que foi importado e exportado(dependency graph)
 - Possibilidade de utilizar outros tipos de arquivos, não só JavaScript
@@ -18,11 +18,11 @@
 
 ### 📌 Webpack e SPA
 
-- As SPAs(Single Page Applications) vem dominando as arquiteturas de projetos Web
+- As **SPAs(Single Page Applications)** vem dominando as arquiteturas de projetos Web
 - Normalmente é utilizado muito JavaScript para atingir resultados interessantes com SPAs (frameworks e libs)
 - Acaba que o webpack ajuda a organizar todo este código JS e também a otimizar a velocidade de carregamento destas páginas
 
-## Instalação do Webpack
+## 🌐 Instalação do Webpack
 
 - Instalação das dependências
 
@@ -36,20 +36,34 @@ npm install webpack webpack-cli --save-dev
 npx webpack
 ```
 
-## Configuração do Webpack
+## ⚙️ Configuração do Webpack
 
 - Podemos customizar o Webpack para atender alguma necessidade específica
 - Criando apenas o arquivo `webpack.config.js` e definindo nossas preferências nele
 - Podemos alterar o nome do arquivo `webpack.config.js` para `webpack.common.js` (mais comum de se ver na documentação)
 
-## Loaders
+## 🔗 Conceitos Fundamentais
 
-- Forma de carregar arquivos com o Webpack
+### 📩 Entrada e Saída
+
+- **Entry** ou entry point é o ponto inicial, onde as dependências do projeto são declaradas para o webpack geralmente no arquivo `index.js`
+- **Output** é a saída do empacotamento do webpack, por efault fica na pasta **dist** e o arquivo é o `main.js`
+- Todas estes padrões podem ser alterados em `webpack.config.js`
+
+### 📌 Loaders
+
+- **Loader** é o recurso que permite ao webpack processar diversos tipos de arquivos, além de JavaScript
+- A cada tipo de arquivo novo que for processado no projeto, precisamos configurar no `webpack.config.js`
+- Duas propriedades precisam ser definidas: a **test** para o tipo de arquivo e a **use** para o loader a ser utilizado
+- Os loaders precisam ser instalados
+- **Forma de carregar arquivos com o Webpack**
 - Como: SCSS, CSS, Babel
 
-## Plugins
+### Plugins
 
-## Modes
+
+
+### Modes
 
 ### Development
 
