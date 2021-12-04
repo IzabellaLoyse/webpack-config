@@ -15,7 +15,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test:  /\.m?js$/,
+        test: /\.m?js$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
@@ -24,6 +24,10 @@ module.exports = {
             plugins: ['@babel/plugin-proposal-object-rest-spread'],
           },
         },
+      },
+      {
+        test: /\.html$/i,
+        use: ['html-loader'],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
