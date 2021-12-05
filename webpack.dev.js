@@ -22,7 +22,7 @@ module.exports = merge(common, {
     new DotenvPlugin(),
     new webpack.DefinePlugin({
       VERSION: JSON.stringify('1.0.0'),
-      PORT: JSON.stringify(process.env.PORT || '3000'),
+      PORT: JSON.stringify(process.env.PORT),
     }),
   ],
 

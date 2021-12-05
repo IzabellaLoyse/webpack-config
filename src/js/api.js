@@ -1,3 +1,5 @@
-const teste = () => console.log('teste');
+import Sucess from '../template/sucess.html';
+import '../assets/img/webpack.png';
 
-export default teste;
+const body = document.querySelector('body');
+body.innerHTML += Sucess;
