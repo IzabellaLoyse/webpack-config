@@ -1,5 +1,3 @@
-const teste = () => {
-  return console.log('teste');
-};
+const teste = () => console.log('teste');
 
 export default teste;

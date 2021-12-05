@@ -5,6 +5,7 @@ const webpack = require('webpack');
 const DotenvPlugin = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   entry: './src/js/index.js',
@@ -57,6 +58,7 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(),
+    new ESLintPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),

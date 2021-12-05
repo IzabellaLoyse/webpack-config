@@ -1,7 +1,7 @@
 import '../sass/style.scss';
 import '../assets/img/characters.svg';
 import Sucess from '../template/sucess.html';
-import teste from '../js/api.js';
+import teste from './api';
 
 teste();
 
