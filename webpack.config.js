@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].[contenthash].js',
   },
   mode: 'development',
 
@@ -56,7 +56,7 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].[contenthash].css',
     }),
     new webpack.DefinePlugin({
       VERSION: JSON.stringify('1.0.0'),
